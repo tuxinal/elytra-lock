@@ -1,0 +1,9 @@
+{
+  "text.autoconfig.elytra-lock.option.enabled": "Enabled",
+  "text.autoconfig.elytra-lock.option.unlockUponRiptideThrow": "Unlock upon riptide throw",
+  "text.autoconfig.elytra-lock.option.showIndicator": "Show lock indicator",
+  "text.autoconfig.elytra-lock.option.whenToShow": "When to show lock indicator",
+  "elytralock.lockkey": "Lock elytra",
+  "elytralock.locktoggled_true": "Elytra is §clocked§r",
+  "elytralock.locktoggled_false": "Elytra is §aunlocked§r"
+}

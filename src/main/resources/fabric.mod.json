@@ -1,38 +1,41 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "elytra-lock",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Elytra lock",
+  "description": "Lock your elytra when you don't plan on using it",
   "authors": [
-    "Me!"
+    "Tuxinal"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "sources": "https://github.com/tuxinal/elytra-lock"
   },
 
-  "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "license": "LGPL-3.0-only",
+  "icon": "assets/elytra-lock/icon.png",
 
   "environment": "*",
   "entrypoints": {
-    "main": [
-      "net.fabricmc.example.ExampleMod"
+    "client": [
+      "xyz.tuxinal.elytralock.ElytraLock"
+    ],
+    "modmenu": [
+      "xyz.tuxinal.elytralock.ModMenuInit"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "elytra-lock.mixins.json"
   ],
 
   "depends": {
     "fabricloader": ">=0.14.6",
     "fabric": "*",
     "minecraft": "~1.19",
-    "java": ">=17"
+    "java": ">=17",
+    "cloth-config": "7.0.x"
   },
   "suggests": {
-    "another-mod": "*"
+    "modmenu": "*"
   }
 }

@@ -1,9 +1,7 @@
-# Fabric Example Mod
+# Elytra Lock
 
-## Setup
+Lock your elytra using a keybind when you don't need it  
+Default keybind is the `G` key  
+Also shows an indicator icon by default which can be configured
 
-For setup instructions please see the [fabric wiki page](https://fabricmc.net/wiki/tutorial:setup) that relates to the IDE that you are using.
-
-## License
-
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+Heavily inspired by [FallFlyingLib](https://github.com/CafeteriaGuild/FallFlyingLib/)'s lock functionality
