@@ -12,7 +12,7 @@
     "sources": "https://github.com/tuxinal/elytra-lock"
   },
 
-  "license": "LGPL-3.0-only",
+  "license": "MIT",
   "icon": "assets/elytra-lock/icon.png",
 
   "environment": "*",
