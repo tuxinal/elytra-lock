@@ -18,6 +18,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.level.GameType;
 
 public class ElytraLock implements ClientModInitializer {
     protected static KeyMapping lockKey;
@@ -57,7 +58,8 @@ public class ElytraLock implements ClientModInitializer {
             // `>> 1` = division by 2 but more efficient (and slightly inaccurate, though we
             // don't need that much precision)
             var x = (client.getWindow().getGuiScaledWidth() >> 1) - 4;
-            var y = client.getWindow().getGuiScaledHeight() - 44;
+            var y = client.getWindow().getGuiScaledHeight()
+                    - (client.gameMode.getPlayerMode() == GameType.CREATIVE ? 38 : 44);
             RenderSystem.setShaderTexture(0, texture);
             GuiComponent.blit(matrixStack, x, y, 0, 0, 8, 8, 8, 8);
         }));

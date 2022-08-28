@@ -21,16 +21,15 @@ dependencies {
 	minecraft "com.mojang:minecraft:${project.minecraft_version}"
 	mappings loom.layered {
 		officialMojangMappings()
-		// OUTOFDATE 1.18.2 parchment on 1.19
-		parchment("org.parchmentmc.data:parchment-1.18.2:2022.07.10@zip") 
+		parchment("org.parchmentmc.data:parchment-1.19.2:2022.08.28@zip") 
 	}
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
-	modApi("me.shedaniel.cloth:cloth-config-fabric:7.0.73"){
+	modApi("me.shedaniel.cloth:cloth-config-fabric:${project.clothconfig_version}"){
 		exclude(group: "net.fabricmc.fabric-api")
 	}
-	modImplementation 'com.terraformersmc:modmenu:4.0.4'
+	modImplementation "com.terraformersmc:modmenu:${project.modmenu_version}"
 }
 
 processResources {
